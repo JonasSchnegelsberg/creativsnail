@@ -127,11 +127,11 @@ html, body{
 	margin: 0;
 	padding: 0;
 	min-height: 100%;
-	height: auto;
+	height: 100%;
 }
 
 main {
-	height: auto;
+	height: 100%;
 }
 
 h2 {
@@ -216,7 +216,7 @@ iframe{
 	content: "";
 	height: 100%;
 	position: absolute;
-	width: 382px;
+	width: 300px;
 	background-size: 100%;
 	margin-left: 10%;
 	margin-top: -10%;
@@ -274,10 +274,11 @@ iframe{
 	content: "";
 	height: 100%;
 	position: absolute;
-	width: 300px;
-	background-size: 100%;
-	margin-left: 79%;
-	margin-top: -1%;
+	width: 200px;
+	background-size: 50%;
+	right: 0;
+	margin-right: 1em;
+	margin-top: -10%;
 	z-index: 2;
 	background-repeat: no-repeat;
 }
@@ -292,7 +293,19 @@ iframe{
 	background-color: #ccc;
 }
 
-
+#welcome::after {
+	background: url(img/dottedarrow_left.png);
+	content: "";
+	height: 100%;
+	position: absolute;
+	width: 200px;
+	background-size: 50%;
+	left: 0;
+	margin-left: 5em;
+	margin-top: -10%;
+	z-index: 2;
+	background-repeat: no-repeat;
+}
 /*--------------MEME GALLERY--------------*/
 #memecontainer {
 	width: 90%;
@@ -321,6 +334,7 @@ footer {
 	margin-top: 5em;
 	list-style-position: inside;
 	bottom: 0;
+	margin-top: 100%;
 }
 
 footer span {
@@ -332,8 +346,4 @@ footer p {
 	text-align: center;
 	color: #999;
 }
-.arrowfloat {
-	float: left;
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
+

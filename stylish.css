@@ -153,6 +153,14 @@ h2:after {
 
 iframe{
 	box-shadow: 4px 4px 12px 0px  rgba(0,0,0,0.5);
+	width: 1280px;
+	height: 720px;
+	margin: 0 auto;
+	frameborder: 5;
+}
+
+#videocontainer {
+	margin: 0 auto;
 }
 /*--------------ABOUT CARD--------------*/
 

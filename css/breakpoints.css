@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* CSS Document */
+@media screen and (max-width: 1570px) {
+	#slidecontainer::after {
+		display: none;
+	}
+	
+	#welcome::after {
+		display: none;
+	}
+	
+	#howto::after {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 1000px) {
+	nav {
+		width: 100%;
+	}
+	
+	.sidenav {
+		display: none;
+	}
+	
+	#slideshow {
+		display: none;
+	}
+	
+	#welcome {
+		width: 40em;
+		height: auto;
+		margin: 0 auto;
+		padding: 1em 2em;
+		margin-top: 5em;
+		background-color: #f9f9f9;
+	}
+	
+	#howto {
+		width: 40em;
+		height: auto;
+		margin: 0 auto;
+		padding: 1em 2em;
+		margin-top: 5em;
+		background-color: #f9f9f9;
+	}
+}
+	
+@media screen and (max-width: 800px) {
+	nav {
+		width: 100%;
+		display: block;
+	}
+	
+	.theme img {
+		display: none;
+	}
+	
+	.logo {
+		display: none;
+	}
+	
+	li {
+		float: none;
+		left: 0;
+	}
+}

@@ -1,0 +1,52 @@
+/* CSS Document */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+}
+
+.wrapper {
+  height: 100%;
+  background: #263729;
+}
+
+.page {
+  float: left;
+  background: #992213;
+  min-height: 100%;
+  padding-top: 30px;
+}
+
+#page-1 {
+  background: #0C717A;
+}
+
+#page-2 {
+  background: #009900;
+}
+
+#page-3 {
+  background: #0000FF;
+}
+
+a {
+  color: #FFF;
+}
+
+a.selected {
+  color: red;
+}
+
+.simulate {
+  height: 2000px;
+}

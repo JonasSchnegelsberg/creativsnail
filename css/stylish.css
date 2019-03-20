@@ -1,0 +1,230 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Maven+Pro|Nanum+Gothic');
+
+/*-------------- GENERAL --------------*/
+
+html, body{
+	background-color: #191919;
+	font-size: 100%;
+	font-family: 'nanum gothic';
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	margin: 2em 0 2em 0;
+}
+
+h1 {
+	color: #f9f9f9;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	font-weight: 100;
+	font-size: 50px;
+}
+
+h2 {
+	text-align: center;
+	color: #f9f9f9;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+span {
+	color: #EC2F5E;
+}
+
+/*--------------NAVIGATIONBAR--------------*/
+
+nav {
+	width: 100%;
+	background-color: none;
+	overflow: auto;
+	text-transform: uppercase;
+	margin-top: -1em;
+}
+
+li {
+	float: right;
+	margin-right: 3em;
+}
+
+.home {
+	float: left;
+	margin-left: 3em;
+}
+
+nav a {
+	width: auto;
+	display: block;
+	padding: 20px 15px;
+	text-decoration: none;
+	color: #f2f2f2;
+	text-align: center;
+	transition: all 0.3s;
+	
+}
+
+nav a:hover {
+	color: #333;
+}
+
+ul {
+	list-style: none;
+	font-family: 'comfortaa';
+	color: black;
+	font-size:1.3em;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+
+
+/*--------------IMAGE PORTALS--------------*/
+
+.portal_gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.portal_gallery article {
+	position: relative;
+	margin: 2em;
+	padding: 1em;
+	background-color: #333;
+	border: 2px solid #000;
+}
+
+.portal_gallery > article > img {
+	width: 450px;
+	height: auto;
+}
+
+p.visit {
+	color: #777;
+	float: right;
+	font-size: 1em;
+	padding: 1em;
+	background-color: #111;
+	transition: all 0.3s;
+}
+
+p.visit:hover {
+	background-color: #444;
+}
+
+p.visit::after {
+	content: "";
+	background-image: url(../img/arrow.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin: 0 1em 0 1em;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+p.date {
+	color: #777;
+	font-size: 1em;
+	float: left;
+	padding: 1em 0 1em 0;
+}
+
+p.date::before {
+	content: "";
+	background-image: url(../img/calender.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	margin: 0 1em 0 1em;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+/*--------------IMAGE PORTALS NEWS RIBBON--------------*/
+
+
+.ribbon {
+  	width: 150px;
+  	height: 150px;
+  	overflow: hidden;
+  	position: absolute;
+	z-index: 3;
+}
+
+.ribbon::before,
+.ribbon::after {
+  	position: absolute;
+  	z-index: -1;
+  	content: '';
+  	display: block;
+  	border: 5px solid #BD113C;
+}
+
+.ribbon span {
+  	position: absolute;
+  	display: block;
+  	width: 225px;
+  	padding: 15px 0;
+  	background-color: #EC2F5E;
+  	box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  	color: #fff;
+  	font: 700 18px;
+  	text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  	text-transform: uppercase;
+  	text-align: center;
+}
+
+/* top left*/
+.ribbon-top-left {
+  	top: -10px;
+  	left: -10px;
+}
+
+.ribbon-top-left::before,
+.ribbon-top-left::after {
+  	border-top-color: transparent;
+  	border-left-color: transparent;
+}
+
+.ribbon-top-left::before {
+  	top: 0;
+  	right: 0;
+}
+
+.ribbon-top-left::after {
+  	bottom: 0;
+  	left: 0;
+}
+
+.ribbon-top-left span {
+  	right: -25px;
+  	top: 30px;
+  	transform: rotate(-45deg);
+}
+
+/*--------------FOOTER--------------*/
+
+footer {
+	background: #333;
+	padding: 1rem;
+	list-style-position: inside;
+	bottom: 0;
+	margin-top: 1em;
+	border-top: 2px solid #000;
+}
+
+footer span {
+	font-weight: bold;
+	color: #f9f9f9;
+}
+
+footer p {
+	text-align: center;
+	color: #999;
+}
+

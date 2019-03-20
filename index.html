@@ -1,60 +1,71 @@
 <!doctype html>
 <html lang="da">
 <head>
-	<title>The Creativ Snail</title>
+	<title>The Creativ Snail - Portal</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="stylish.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/stylish.css">
+	<link rel="stylesheet" href="css/breakpoints.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link type="text/javascript" href="script/mechanics.js">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="icon" type="image/png" sizes="40x40" href="img/favicon.png">
 </head>
 
 <body>
     <header>
-		<div id="leftw" class="logo"><a href="index.html"><img src="img/snail_logo2.png" alt="home"></a></div>
-		<div id="lefty" class="logo"><a href="index.html"><img src="img/snail_logo2_yellow.png" alt="home"></a></div>
+		<!--<h1 class="puff-in-center">creativ<span>(</span>e<span>)</span> snail<span class="blink">_</span></h1>-->
 		<nav>
 			<ul>
 				<li><a href="#">Contact</a></li>
 				<li><a href="about.html">About Me</a></li>
-				<li><a href="timeline.html">My Timeline</a></li>
-				<li class="dropdown">
-    				<a href="#" class="dropbtn">Project Links</a>
-    				<div class="dropdown-content">
-      					<a href="http://creativsnail.com/rumrejsen/">Tema 1 - Rumrejsen</a>
-      					<a href="http://creativsnail.com/hopla-standarddans/">Tema 2 - Hopla-Bridge</a>
-						<a href="http://creativsnail.com/aquamize/">Tema 3 - Aquamize</a>
-						<a href="video.html">Tema V - Video</a>
-					</div>
-				</li>
+				<li class="home"><a href="#">Home</a></li>
 			</ul>
 		</nav>
-		<div class="theme"><a href="index_light.html"><img src="img/light_icon.png" alt="home"></a></div>
 	</header>
 	
 	<main>
-		<section id="slidecontainer">
-			<div id="slideshow">
-				<div class="slide-wrapper">
-					<div class="slide"></div>
-					<div class="slide"></div>
-					<div class="slide"></div>
-					<div class="slide"></div>
-				</div>
-			</div>
-		</section>
-		<section id="welcome">
-			<article>
-				<h2>Welcome to me</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<section class="portal_gallery">
+			<article class="puff-in-center">
+				<img src="img/soon.png" alt="comming soon portal">
+				<h2>Wedding Planner</h2>
+				<p class="date">4. Marts - 22. Marts</p>
+				<a href="#" target="_blank"><p class="visit">se mere</p></a>
 			</article>
-		</section>
-		<section id="howto">
-			<article>
-				<h2>How to make website</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+			<article class="puff-in-center">
+   				<div class="ribbon ribbon-top-left"><span>aktuel</span></div>
+				<img src="img/tokolige.PNG" alt="to kølige portal">
+				<h2>to kølige</h2>
+				<p class="date">21. Januar - 1. Marts</p>
+				<a href="http://creativsnail.com/tokoelige/" target="_blank"><p class="visit">se mere</p></a>
+			</article>
+			
+			<article class="puff-in-center">
+				<img src="img/portfolio.PNG" alt=" portfolio portal">
+				<h2>portfolio</h2>
+				<p class="date">3. December - 14. December</p>
+				<a href="http://creativsnail.com/portfolio/" target="_blank"><p class="visit">se mere</p></a>
+			</article>
+			
+			<article class="puff-in-center">
+				<img src="img/aquamize.PNG" alt="aquamize portal">
+				<h2>aquamize</h2>
+				<p class="date">5. November - 30. November</p>
+				<a href="http://creativsnail.com/aquamize/" target="_blank"><p class="visit">se mere</p></a>
+			</article>
+			
+			<article class="puff-in-center">
+				<img src="img/standarddans.PNG" alt="hopla-standarddans portal">
+				<h2>hopla standarddans</h2>
+				<p class="date">22. Oktober - 2. November</p>
+				<a href="http://creativsnail.com/hopla-standarddans/" target="_blank"><p class="visit">se mere</p></a>
+			</article>
+			
+			<article class="puff-in-center">
+				<img src="img/rumrejsen.PNG" alt="rumrejsen portal">
+				<h2>Rumrejsen</h2>
+				<p class="date">3. September - 14. September</p>
+				<a href="http://creativsnail.com/rumrejsen/" target="_blank"><p class="visit">se mere</p></a>
 			</article>
 		</section>
 	</main>
